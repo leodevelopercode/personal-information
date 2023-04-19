@@ -1,4 +1,7 @@
 spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
   application:
     name: personalInformation
   datasource:
@@ -9,4 +12,5 @@ spring:
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
+    
   type-aliases-package: com.leo.example.entities
